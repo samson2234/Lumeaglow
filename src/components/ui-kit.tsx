@@ -103,7 +103,7 @@ export function PricingBlock({ num }: { num?: string }) {
         <FadeUp className="md:col-span-4">
           <Eyebrow num={num}>Treatment Pricing</Eyebrow>
           <h2 className="h-section mt-4">The menu.</h2>
-          <p className="pull mt-6 text-muted-foreground">Considered treatments, clearly priced.</p>
+          <p className="pull mt-6 text-muted-foreground">A guide to our pricing</p>
         </FadeUp>
         <FadeUp className="md:col-span-8" delay={100}>
           <ul className="border-t border-foreground/25">

@@ -15,13 +15,14 @@ export const Route = createFileRoute("/find-my-treatment")({
 });
 
 const groups: {
-  title: string; src: string; label: string; book: string; explore: Slug[];
+  id: string; title: string; src: string; label: string; book: string; explore: Slug[];
   items: { name: string; line: string }[];
 }[] = [
   {
+    id: "lines-volume",
     title: "Lines & Volume",
     src: img.profile, label: "Soft profile portrait",
-    book: "https://app.acuityscheduling.com/schedule/1aaae92a/category/Cosmetic%2520Consultations%252FWrinkle%2520%2526%2520Volume%2520Treatments",
+    book: "https://lumeaglow.as.me/schedule/1aaae92a/category/Cosmetic%2520Consultations%252FWrinkle%2520%2526%2520Volume%2520Treatments",
     explore: ["lines-wrinkles-volume"],
     items: [
       { name: "Lines & Wrinkles", line: "Softening the look of expression lines with a natural approach." },
@@ -30,6 +31,7 @@ const groups: {
     ],
   },
   {
+    id: "texture-radiance",
     title: "Texture & Radiance",
     src: img.skin, label: "Skin texture close-up",
     book: "https://app.acuityscheduling.com/schedule/1aaae92a/category/Skin%2520Boosters%2520%2526%2520Rejuran%2520",
@@ -40,6 +42,7 @@ const groups: {
     ],
   },
   {
+    id: "clarity-tone",
     title: "Clarity & Tone",
     src: img.facial, label: "Facial in treatment",
     book: "https://app.acuityscheduling.com/schedule/1aaae92a/category/Skin%2520Consultation",
@@ -70,7 +73,7 @@ function Finder() {
       </section>
 
       {groups.map((g, gi) => (
-        <section key={g.title} className={gi % 2 ? "bg-stone section-pad" : "section-pad"}>
+        <section key={g.title} id={g.id} className={`scroll-mt-20 ${gi % 2 ? "bg-stone section-pad" : "section-pad"}`}>
           <div className="wrap grid gap-10 md:grid-cols-12">
             <FadeUp className={`md:col-span-4 ${gi % 2 ? "md:order-2 md:col-start-9" : ""}`}>
               <Photo src={g.src} label={g.label} />

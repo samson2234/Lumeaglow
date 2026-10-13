@@ -110,9 +110,9 @@
   line-height: 1.35;
 }
 @utility section-pad {
-  padding-top: 56px;
-  padding-bottom: 56px;
-  @media (min-width: 768px) { padding-top: 96px; padding-bottom: 96px; }
+  padding-top: 40px;
+  padding-bottom: 40px;
+  @media (min-width: 768px) { padding-top: 64px; padding-bottom: 64px; }
 }
 @utility wrap {
   width: 100%;

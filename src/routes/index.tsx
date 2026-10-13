@@ -199,8 +199,8 @@ function Home() {
           </FadeUp>
           <FadeUp className="flex flex-wrap content-start gap-3 md:col-span-8" delay={100}>
             {concerns.map((c) => (
-              <Link key={c} to="/find-my-treatment" className="border border-foreground/30 px-5 py-3 font-serif text-xl transition-colors hover:bg-espresso hover:text-ivory">
-                {c}
+              <Link key={c.name} to="/find-my-treatment" hash={c.group} className="border border-foreground/30 px-5 py-3 font-serif text-xl transition-colors hover:bg-espresso hover:text-ivory">
+                {c.name}
               </Link>
             ))}
           </FadeUp>

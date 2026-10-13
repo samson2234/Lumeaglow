@@ -57,7 +57,7 @@ export type Treatment = {
 };
 
 const LINES_BOOK =
-  "https://lumeaglow.as.me/schedule/1aaae92a/category/Cosmetic%2520Consultations%2520For%2520Wrinkle%2520Volume%2520Treatments";
+  "https://lumeaglow.as.me/schedule/1aaae92a/category/Cosmetic%2520Consultations%252FWrinkle%2520%2526%2520Volume%2520Treatments";
 
 export const treatments: Record<Slug, Treatment> = {
   "lines-wrinkles-volume": {
@@ -286,7 +286,7 @@ export const treatments: Record<Slug, Treatment> = {
     ],
     button: {
       label: "Make a booking",
-      href: "https://app.acuityscheduling.com/schedule/1aaae92a/category/Skin%2520Boosters%25202520%2525262520Rejuran%2520",
+      href: "https://app.acuityscheduling.com/schedule/1aaae92a/category/Skin%2520Boosters%2520%2526%2520Rejuran%2520",
     },
     price: "from $300",
     faqs: [
@@ -316,12 +316,12 @@ export const pricing = [
 ];
 
 export const concerns = [
-  "Lines & Wrinkles",
-  "Masseter Muscle Concerns",
-  "Facial Volume & Definition",
-  "Skin Texture & Pores",
-  "Dehydrated & Dull Skin",
-  "Acne & Congestion",
-  "Pigmentation & Uneven Tone",
-  "Overall Skin Quality",
+  { name: "Lines & Wrinkles", group: "lines-volume" },
+  { name: "Masseter Muscle Concerns", group: "lines-volume" },
+  { name: "Facial Volume & Definition", group: "lines-volume" },
+  { name: "Skin Texture & Pores", group: "texture-radiance" },
+  { name: "Dehydrated & Dull Skin", group: "texture-radiance" },
+  { name: "Acne & Congestion", group: "clarity-tone" },
+  { name: "Pigmentation & Uneven Tone", group: "clarity-tone" },
+  { name: "Overall Skin Quality", group: "clarity-tone" },
 ];

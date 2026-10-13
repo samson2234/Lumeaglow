@@ -21,7 +21,7 @@ const hours = [
   ["Thursday", "To be confirmed"],
   ["Friday", "To be confirmed"],
   ["Saturday", "To be confirmed"],
-  ["Sunday", "Closed"],
+  ["Sunday", "To be confirmed"],
 ];
 
 function Contact() {
