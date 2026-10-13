@@ -24,7 +24,7 @@ function Home() {
         <div className="wrap relative flex h-full flex-col justify-end pb-16 md:justify-center md:pb-0">
           <FadeUp className="max-w-xl">
             <Eyebrow>Registered Nurse-led clinic</Eyebrow>
-            <h1 className="display mt-6">Every face is unique. Every glow is yours.</h1>
+            <h1 className="display mt-6">Every face is unique.</h1>
             <p className="mt-6 max-w-md">
               Rather than chasing trends or dramatic changes, our approach focuses on maintaining balance, harmony and
               results that remain natural, complementing your individual features.
