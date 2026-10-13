@@ -209,9 +209,14 @@ export function Faq({ items }: { items: { q: string; a: string | string[]; twoCo
 
 export function Disclaimer() {
   return (
-    <p className="wrap py-8 text-center text-sm italic text-muted-foreground">
-      All treatments are subject to a consultation with a registered health practitioner and subject to suitability.
-      Every procedure carries risks, which will be discussed during the consultation.
-    </p>
+    <>
+      <p className="eyebrow wrap pt-8 text-center text-foreground/70">
+        Jessica Taylor RN (Division 1) · Registration No. NMW0002801599
+      </p>
+      <p className="wrap py-8 text-center text-sm italic text-muted-foreground">
+        All treatments are subject to a consultation with a registered health practitioner and subject to suitability.
+        Every procedure carries risks, which will be discussed during the consultation.
+      </p>
+    </>
   );
 }

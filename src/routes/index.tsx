@@ -33,6 +33,9 @@ function Home() {
               <Ext href={BOOK} className="btn btn-primary">Make a booking</Ext>
               <Link to="/find-my-treatment" className="link-line self-start">Find my treatment</Link>
             </div>
+            <p className="eyebrow mt-6 text-foreground/70">
+              Registered Nurse-led · Jessica Taylor RN (Division 1) · NMW0002801599
+            </p>
           </FadeUp>
         </div>
         <span className="eyebrow absolute bottom-3 right-4 hidden bg-ivory/85 px-2 py-1 text-[10px] md:block">Photo: soft-focus hero portrait</span>
@@ -93,8 +96,8 @@ function Home() {
               She believes aesthetics should be personal, there is no one-size-fits-all approach, instead, focusing on
               each client's individual anatomy and features.
             </p>
-            <p className="eyebrow mt-8 border-t border-foreground/25 pt-5">
-              Jessica Taylor RN (Division 1), accredited Cosmetic Injector
+            <p className="eyebrow mt-8 border-t border-foreground/25 pt-5 text-foreground/70">
+              Jessica Taylor RN (Division 1) · Registration No. NMW0002801599
             </p>
             <Ext href={BOOK} className="btn btn-primary mt-8 self-start">Book your complimentary consultation</Ext>
           </FadeUp>
